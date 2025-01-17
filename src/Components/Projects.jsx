@@ -24,7 +24,7 @@ const Projects = () => {
       description:
         "A visually accurate clone of the Amazon login page, built for UI/UX practice.",
       teckStack: "React.js, Tailwind CSS",
-      liveDemo: "http://localhost:5173/amazon",
+      liveDemo: "*",
       github: "https://github.com/HarishWiz",
       image: Project2,
     },
@@ -34,7 +34,7 @@ const Projects = () => {
       description:
         "A recreation of Yahoo’s login page with a modern, responsive layout.",
       teckStack: "React.js, Tailwind CSS",
-      liveDemo: "http://localhost:5173/yahoo",
+      liveDemo: "*",
       github: "https://github.com/HarishWiz",
       image: Project3,
     },
@@ -43,7 +43,7 @@ const Projects = () => {
       title: "Food Image Gallery ",
       description: "A small image gallery showcasing delicious food items.",
       teckStack: "React.js, Bootstrap",
-      liveDemo: "#",
+      liveDemo: "*",
       github: "https://github.com/HarishWiz",
       image: Project4,
     },
