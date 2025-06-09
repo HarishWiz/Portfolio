@@ -1,4 +1,3 @@
-
 import HTML from "./Assets/HTML.svg";
 import CSS from "./Assets/CSS.svg";
 import Js from "./Assets/Js.svg";
@@ -8,6 +7,9 @@ import React from "./Assets/React.svg";
 import Java from "./Assets/Java.svg";
 import SpringBoot from "./Assets/SpringBoot.svg";
 import MySQL from "./Assets/MySQL.svg";
+import git from "./Assets/git.svg";
+import GitHub from "./Assets/GitHub.svg";
+import FramerMotion from "./Assets/FramerMotion.png";
 
 const Skills = () => {
   const skills = [
@@ -38,7 +40,7 @@ const Skills = () => {
     {
       id: 5,
       src: Tailwind,
-      title: "Tailwind ",
+      title: "Tailwind",
       style: "shadow-sky-500",
     },
     {
@@ -62,18 +64,40 @@ const Skills = () => {
     {
       id: 9,
       src: MySQL,
-      title: "MYSQL",
+      title: "MySQL",
       style: "shadow-blue-500",
     },
+    {
+      id: 10,
+      src: git,
+      title: "Git",
+      style: "shadow-red-500",
+    },
+    {
+      id: 11,
+      src: GitHub,
+      title: "GitHub",
+      style: "shadow-gray-500",
+    },
+    {
+      id: 12,
+      src: FramerMotion,
+      title: "Framer Motion",
+      style: "shadow-pink-500",
+    },
   ];
+
   return (
     <>
-      <section id='skills' className="w-full h-fit bg-black py-20 flex flex-col justify-center items-center md:px-5">
-        <div className='container mx-auto flex flex-col items-center justify-center gap-10 px-6'>
-          <div className='w-full'>
-          <h1 className="text-purple-400 text-4xl font-bold text-start md:ps-8">
-            My Skills
-          </h1>
+      <section
+        id="skills"
+        className="w-full h-fit bg-black py-20 flex flex-col justify-center items-center md:px-5"
+      >
+        <div className="container mx-auto flex flex-col items-center justify-center gap-10 ">
+          <div className="w-full">
+            <h1 className="text-purple-400 text-4xl font-bold text-start ps-6 md:ps-8">
+              My Skills
+            </h1>
           </div>
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center gap-8 text-center py-2 px-6 md:px-10">
             {skills.map(({ id, title, src, style }) => (

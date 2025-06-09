@@ -1,29 +1,87 @@
-import React from 'react';
-import ExperienceImage from './Assets/ExperienceImage.png'
+import React from "react";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <section id='experience' className="h-full w-full bg-black text-white flex items-center justify-center md:px-5 py-20">
-      <div className='container mx-auto flex flex-col md:flex-row items-center justify-center gap-10'>
-        <div className='md:w-1/2 text-left hidden md:block'>
-          <img src={ExperienceImage} alt="ExperienceImage" />
-        </div>
-        <div className='md:1/2 text-left ps-6 '>
-        <h1 className='text-4xl font-bold text-purple-400 mb-4'>Experience</h1>
-        <h2 className='text-2xl font-semibold text-blue-400 mb-2'>Full Stack Web Developer Trainee</h2>
-        <p className='text-xl font-medium leading-relaxed mb-6'>
-        <strong>Credo Systemz | Aug 2024 – Dec 2024</strong>
-        </p>
-        <ul className='text-xl font-medium leading-relaxed list-disc list-inside'>
-          <li>Learned Full-Stack Web Development, focusing on building modern, responsive Applications.</li>
-          <li>Gained hands-on Experience with <span className='text-blue-400'>React.js, Tailwind CSS,</span> and <span className='text-blue-400'>Spring Boot</span> .</li>
-          <li>Designed User-Friendly, Mobile-responsive layouts to enhance usability across devices.</li>
-          <li>Practiced integrating REST APIs and managing MySQL databases for Dynamic Web Applications.</li>
-        </ul>
+    <section
+      id="experience"
+      className="w-full bg-black text-white py-20 px-6 md:px-16"
+    >
+      <div className="container mx-auto">
+        <h2 className="text-4xl font-bold text-purple-400 text-start mb-12">
+          Experience
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <motion.div
+            className="bg-gray-900 rounded-xl p-6 shadow-md"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl font-semibold text-blue-400 mb-2">
+              Frontend Developer
+            </h3>
+            <p className="text-xl font-medium mb-3">
+              <strong>Techzyra | Jan 2025 – Apr 2025</strong>
+            </p>
+            <ul className="md:list-disc list-none md:list-inside text-lg leading-relaxed space-y-3">
+              <li>
+                Built and maintained responsive UIs using{" "}
+                <span className="text-cyan-400">React.js</span>,{" "}
+                <span className="text-cyan-400">TypeScript</span>, and{" "}
+                <span className="text-cyan-400">Tailwind CSS</span>.
+              </li>
+              <li>
+                Developed dynamic animations with{" "}
+                <span className="text-cyan-400">Framer Motion</span>.
+              </li>
+              <li>
+                Worked closely with designers and backend developers (Node.js, Express).
+              </li>
+              <li>
+                Focused on performance, accessibility, and clean code structure.
+              </li>
+            </ul>
+          </motion.div>
+
+          {/* Credo Systemz Experience - Right */}
+          <motion.div
+            className="bg-gray-900 rounded-xl p-6 shadow-md"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl font-semibold text-blue-400 mb-2">
+              Full Stack Web Developer Trainee
+            </h3>
+            <p className="text-xl font-medium mb-3">
+              <strong>Credo Systemz | Aug 2024 – Dec 2024</strong>
+            </p>
+            <ul className="list-disc list-inside text-lg leading-relaxed space-y-3">
+              <li>
+                Learned and practiced modern web development with{" "}
+                <span className="text-cyan-400">React.js</span>,{" "}
+                <span className="text-cyan-400">Tailwind CSS</span>, and{" "}
+                <span className="text-cyan-400">Spring Boot</span>.
+              </li>
+              <li>
+                Built mobile-responsive UI layouts and integrated RESTful APIs.
+              </li>
+              <li>
+                Worked on MySQL-based backend features and user authentication flows.
+              </li>
+              <li>
+                Developed full-stack CRUD applications and dynamic dashboards.
+              </li>
+            </ul>
+          </motion.div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
